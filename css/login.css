@@ -1,0 +1,94 @@
+/* 背景圖 */
+.mainpic-login {
+  position: absolute;
+  /* 以body本身為基準做對齊 */
+  background-size: cover;
+  /* 圖片寬度填滿畫面 */
+  z-index: -1;
+  /* 用來排定順序,數值大的在前 */
+  width: 100%;
+}
+
+/* 表單基底 */
+.formact {
+  border: 1px solid #ccc;
+  /* 基底半透明 */
+  background-color: rgba(256, 256, 256, 0.9);
+}
+
+/* 註冊表單 */
+.container-login {
+  padding: 60px;
+}
+
+/* 註冊表單內容輸入框 */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  /* 將區塊元素改為行內元素，但保有區塊特性 */
+  border: none;
+  background: rgba(95, 149, 149, 0.7);
+  color: #f5f5f5;
+  font-family: Verdana, sans-serif;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background: rgba(95, 149, 149, 0.7);
+  outline: none;
+  /* 不用預設藍色框線 */
+}
+
+/* 水平線 */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* 將登入及註冊按鈕包覆起來 */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* 註冊及登入按鈕的設定 */
+.login-button {
+  background-color: #00b8a9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.login-button:hover {
+  opacity: 1;
+}
+
+/*註冊及登入按鈕兩者平分空間 */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* 已註冊過點此登入按鈕設定 */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #40514e;
+}
+
+/* 響應式設定 */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+

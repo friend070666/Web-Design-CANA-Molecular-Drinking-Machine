@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- 瀏覽器頁面與裝置寬度相同，初始畫面比例不變 -->
+    <meta description="CANA分子飲料機,透過分子墨水匣印出各種飲品風味,
+      不論是果汁、提神飲料、高蛋白飲、雞尾酒、啤酒,上千種你想得到想不到的口味,都可以用CANA分子飲料機自製而成">
+    <title>CANA Technology-註冊會員</title>
+    <link rel="shortcut icon" href="img/website.png"><!-- 在網址列前加上圖案 -->
+    <link rel="stylesheet" href="css/navbar.css"> <!-- 引用標題列css -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- 引用主頁面css -->
+  </head>
+
+  <body>
+    <img src="img/註冊會員背景圖.jpg" class="mainpic-login">
+    <div class="fixbox">
+
+
+      <div class="fixbox2">
+
+        <div id="mySidebar" class="topnav">
+          <!--<a id="closebtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+          <a href="index.html" class="active"><img src="img/主頁鍵.png" width="30" hright="30">CANA </a>
+          <a href="#news">門市據點</a>
+          <a href="index-about.html">關於我們</a>
+          <div class="dropdown">
+            <button class="dropbtn">產品介紹</button>
+            <div class="dropdown-content">
+              <a href="#intro1">分子飲料機使用方法</a>
+              <a href="#intio2">可製成飲品總覽</a>
+              <a href="#intro3">訂閱方案</a>
+            </div>
+          </div>
+          <a href="index-login.html">登入/註冊</a>
+
+        </div>
+
+      </div>
+    </div>
+    <main id="main">
+     <!-- <button id="openbtn" class="open-navbar-btn" onclick="openNav()">☰</button> -->
+
+      <div class="slideshow-container">
+        <form action="action_page.php" class="formact">
+          <!-- 表單背景 -->
+          <div class="container-login">
+            <h1>會員註冊</h1>
+            <p>限時優惠-新會員註冊後可領取1200元折價券!</p>
+            <hr>
+
+            <label for="email"><b>帳號Email</b></label>
+            <input type="text" value="user@example.com" name="email" required>
+
+            <label for="psw"><b>密碼Password</b></label>
+            <input type="password" placeholder="至少8個字元 需包含數字與大小寫字母" name="psw" required>
+
+            <label for="psw-repeat"><b>確認密碼Repeat Password</b></label>
+            <input type="password" name="psw-repeat" required>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 登入後記住密碼
+            </label>
+
+            <p>註冊即表示您同意本公司<a href="#privacy" style="color:#5F9595">隱私政策條款</a></p>
+
+            <div class="clearfix">
+              <button type="button" class="login-button cancelbtn">已註冊過帳號，點此登入</button>
+              <button type="submit" class="login-button signupbtn">註冊成為會員</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </main>
+
+
+    <div class="footer">
+      <span class="text3">科管所碩二 M10920016 莊詒安<br>商標與分子飲料機產品圖皆取自-<br>Cana Technology官網與臉書粉專</span><br>
+
+    </div>
+
+  </body>
+  <!-- 引用js放在body後 避免頁面順序混亂 -->
+  <script type="text/javascript" src="static/js/navbar.js"></script><!-- 引用下拉式選單的js -->
+
+</html>
